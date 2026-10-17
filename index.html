@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Place for You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span>✿</span> A Little Place for You
+    </a>
+
+    <button id="musicToggle" class="music-toggle">
+      ♫ Play Music
+    </button>
+  </header>
+
+  <main class="site-shell">
+
+    <div class="page-meta">
+      <span id="pageLabel">A LITTLE GIFT</span>
+      <span id="pageCount">01 / 04</span>
+    </div>
+
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+
+    <!-- HALAMAN 1: PEMBUKAAN -->
+    <section class="page active" id="home">
+      <p class="eyebrow">A SMALL PLACE MADE WITH CARE</p>
+
+      <h1>A little place<br>
+        <span>for you.</span>
+      </h1>
+
+      <p class="description">
+        Aku bikinn tempat kecil inii khusus buat kamuuu. 
+        
+        Semoga pas kamu bukaa, kamu bisa ngerasa sedikit senengg yaa
+      </p>
+
+      <div class="cat-scene">
+        <div class="pixel-cat" id="momo" role="button"
+             tabindex="0" aria-label="Interaksi dengan Momo">
+          <div class="cat-ears">
+            <span></span><span></span>
+          </div>
+          
+<div class="cat-face">
+  <div class="eye eye-left"></div>
+  <div class="eye eye-right"></div>
+  <div class="nose"></div>
+  <div class="mouth"></div>
+</div>
+         <div class="cat-body"></div>
+         <div class="cat-arm"></div>
+        </div>
+
+        <p id="momoBubble">
+          Hai! Aku Momo. Klik aku!
+        </p>
+      </div>
+
+      <button class="button button-primary" data-next>
+        Come inside →
+      </button>
+    </section>
+
+    <!-- HALAMAN 2: SURAT -->
+    <section class="page" id="letter" hidden>
+      <p class="eyebrow">A NOTE FOR YOU</p>
+
+      <h2>Untuk kamu,<br>
+        <span>yang istimewa.</span>
+      </h2>
+
+      <p class="description">
+        Ada surat kecil yang mau aku sampeinn.
+        Buka amplopnya untuk bacaa.
+      </p>
+
+      <button id="envelope" class="envelope">
+        Buka surat
+      </button>
+
+      <article id="letterCard" hidden>
+        <h3>Haiii punkk.</h3>
+
+        <p>
+          Jujurrr, ada banyak hal yang mau aku sampeinn, tapi aku sendiri bingung harus mulai dari mana
+        </p>
+
+        <p>
+          Terima kasih, ya, udah hadirr dan jadii seseorang yang bikinn hari-hari akuu kerasa lebih hidup lagi. Mungkin kamu gaa sadarr, tapi cara kamu komunikasii, tingkah lakuu kamuu, bahkan joks recehh dari kamu ituu hal hal yang aku nikmatiinn
+        </p>
+        
+        <p>
+          Aku juga suka liatinn kamuu. Bukan cuma gara garaa kamu cantik lucuu imut gumushh doang, tapi juga gara gara aku ngerasaa kalo kamu tu pantess buat di jagaa sama diperhatiinn
+        </p>
+        
+        <p>
+          Aku banggaaaa banget sama kamu. Dari cara kamuu mikirr, kamuu yang terus tumbuhh sama kamuu yang bisa ngadepin masalah masalah didepan kamuu. Aku mungkin enggaa selalu tau apa yang lagi kamu hadepinn, tapii aku berharap kamu tetap bisa ngeliatt hal hal baik yang ada di dalem diri kamuu sendiri, bahkan waktuu kamu ngerasa kurang
+        </p>
+        
+        <p>
+          Aku juga mauu minta maaff bangett sama kesalahan kesalahan akuuu. Terus juga kalo pernah ada sikap atau perkataan aku yang bikinn kamu gaa nyaman atau terluka, aku minta maaf yaa. Aku masih perlu banyakk belajar jadi seseorang yang bisa ngetreatt kamuu lebih baik
+        </p>
+        
+        <p>
+          Aku bikinn inii garaa gara aku ngeliat kamuu akhir akhirr inii lagi semrawut bangett, terus juga kaya lagi banyakkkk banget masalahnya, apalagii kamu lagi mens kann pastii berat sama cape bangett yaa
+        </p>
+        
+        <p>
+          Aku gatauu ke depannya bakal gimanaa. Tapi buat sekarang, aku senang bangett bisa kenall sama kamuu, bisaa komunikasii sama kamuu, terus juga bisa punya kesempatan buat nyampeinn kaloo kehadiran kamuu benerr benerr berhargaa buat akuu
+        </p>
+        
+        <p>
+          Jadi, makasiii ya udah jadi diri kammu sendiri. Jangan ngerasaa harus jadi sempurna buat bisa dihargai, kamuu udah berharga banget koo
+        </p>
+
+        <p class="signature">
+          Fromm Nizarr. 
+        </p>
+      </article>
+
+      <button class="button button-primary" data-next>
+        Lanjutkan →
+      </button>
+    </section>
+    
+    <!-- HALAMAN SCRAPBOOK -->
+<section class="page scrapbook-page" id="scrapbookPage">
+
+  <div class="scrapbook-container">
+    <p class="scrapbook-eyebrow">A LITTLE BOOK OF YOUU</p>
+
+    <p class="scrapbook-subtitle">
+      Sedikitt foto yang aku simpen. 
+    </p>
+    
+
+    <div class="scrapbook-photos">
+
+  <article class="scrap-photo photo-one reveal-photo">
+    <div class="scrap-photo-frame">
+      <img src="foto1.jpg" alt="Kenangan pertama">
+      <button class="photo-cover" type="button"
+              aria-label="Buka foto pertama">
+        <span class="cover-heart">♡</span>
+        <span class="cover-title">A little surprise</span>
+        <span class="cover-hint">Ketuk untuk membuka</span>
+        <span class="cover-tape"></span>
+      </button>
+    </div>
+    <p class="scrap-caption"> </p>
+    <span class="scrap-deco">✿</span>
+  </article>
+
+  <article class="scrap-photo photo-two reveal-photo">
+    <div class="scrap-photo-frame">
+      <img src="foto2.jpg" alt="Kenangan kedua">
+      <button class="photo-cover" type="button"
+              aria-label="Buka foto kedua">
+        <span class="cover-heart">♡</span>
+        <span class="cover-title">For you</span>
+        <span class="cover-hint">Ketuk untuk membuka</span>
+        <span class="cover-tape"></span>
+      </button>
+    </div>
+    <p class="scrap-caption"> </p>
+    <span class="scrap-deco">♡</span>
+  </article>
+
+  <article class="scrap-photo photo-three reveal-photo">
+    <div class="scrap-photo-frame">
+      <img src="foto3.jpg" alt="Kenangan ketiga">
+      <button class="photo-cover" type="button"
+              aria-label="Buka foto ketiga">
+        <span class="cover-heart">♡</span>
+        <span class="cover-title">One more memory</span>
+        <span class="cover-hint">Ketuk untuk membuka</span>
+        <span class="cover-tape"></span>
+      </button>
+    </div>
+    <p class="scrap-caption"> </p>
+    <span class="scrap-deco">✿</span>
+  </article>
+
+</div>
+
+<!-- Tombol untuk mengaktifkan sensor gerak HP -->
+<button class="shake-enable" id="enableShakeButton" type="button">
+  Aktifkan fitur goyang HP
+</button>
+<p class="shake-status" id="shakeStatus" aria-live="polite">
+  Ketuk penutup foto atau aktifkan sensor untuk mencoba goyangan HP.
+</p>
+    <p class="scrapbook-ending">
+      Thank you for being part of my life.
+    </p>
+
+    <button class="scrapbook-next" data-next>
+      Lanjutkan cerita →
+    </button>
+  </div>
+
+</section>
+    
+    <!-- HALAMAN 3: PESAN DARI MOMO -->
+    <section class="page" id="messages" hidden>
+      <p class="eyebrow">A LITTLE REMINDER</p>
+
+      <h2>Satu pesan kecil<br>
+        <span>untuk harimu.</span>
+      </h2>
+
+      <div class="message-card">
+        <span> MESSAGE FOR YOU </span>
+
+        <p id="randomMessage">
+          Kamu boleh berjalan pelan.
+          Beri dirimu waktu untuk bertumbuh.
+        </p>
+
+        <button id="newMessage" class="button">
+          Pesan lainnya ↻
+        </button>
+      </div>
+
+      <p id="secretHint">
+        Momo sepertinya menyimpan sebuah rahasia.
+      </p>
+
+      <button class="button button-primary" data-next>
+        Lanjutkan →
+      </button>
+    </section>
+
+    <!-- HALAMAN 4: PENUTUP -->
+    <section class="page" id="ending" hidden>
+      <p class="eyebrow">A LITTLE GIFT FOR YOU</p>
+
+      <div class="gift-art">🎁</div>
+
+      <h2>Take a little warmth<br>
+        <span>with you.</span>
+      </h2>
+
+      <p class="description">
+        Makasii yaa udaaa mau ngunjunginn tempat kecil inii
+        Semoga hari kamuu dipenuhi hal hal baikkk
+      </p>
+
+      <button id="secretButton" class="button">
+        Ada satu hal lagi...
+      </button>
+
+      <article id="secretNote" hidden>
+        <p>
+          Kalau kamu bacaa sampe bagian ini, aku cuma mau nitipp beberapa hal
+        </p>
+        
+        <p>
+          Kaloo suatu hari ada sesuatu yang ganggu pikiran kamu, jangan ngerasaa harus nyimpen ituu sendirian. Kaloo kamu mauu ceritaa, cobaa cerita duluu. Mungkin kita enggaa langsung nemuinn solusinyaa, tapii se enggaanya kamu ga harus mikirinn semuanya sendirian
+        </p>
+        
+        <p>
+          Dan kaloo kamu lagi ngerasaaa punya banyak kekurangan, jangan buru buru nganggep diri kamu gaa cukup baikk. Gaa semua hal harus langsung sempurna. Ada yang bisa diperbaiki, ada yang bisa dipelajari, dan ada yang butuh waktu buatt dipahami
+        </p>
+        
+        <p>
+          Aku bangga sama kamu, benerann. Aku harap kamu juga bisa bangga samaa diri kamuu sendiri, termasuk hal hal kecil yang berhasil kamu lewatinn
+        </p>
+        
+        <p>
+          Terima kasih yaa udaaa hadir dan bikinn aku ngerasainn banyak hal baik lagi. Maaffff kaloo komunikasi akuu kesannya kaya maksaa.
+        </p>
+        
+        <p>
+          Aku enggaa tauu semua kata kata ini cukup apa engga buat jelasin apa yang mau aku sampeinn. Tapi se engganya, aku berharap kamu tau satu hal :
+        </p>
+        
+        <p>
+          Kehadiran kamuu berartiiii, dan aku senengg banget bisa kenal sama kamu 
+        </p>
+        <span>Just for you. ♡</span>
+      </article>
+
+      <button id="restartButton" class="button button-primary">
+        Mulai lagi ↻
+      </button>
+    </section>
+
+    <!-- NAVIGASI -->
+    <nav class="page-navigation">
+      <button id="backButton" class="nav-button" disabled>
+        ← Back
+      </button>
+      <div class="page-dots">
+        <span class="page-dot active"></span>
+        <span class="page-dot"></span>
+        <span class="page-dot"></span>
+        <span class="page-dot"></span>
+      </div>
+
+      <button id="nextButton" class="nav-button">
+        Next →
+      </button>
+    </nav>
+
+  </main>
+  
+
+  <!-- MUSIK OPSIONAL -->
+  <audio id="backgroundMusic" loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
